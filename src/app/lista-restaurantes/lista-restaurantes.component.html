@@ -1,0 +1,32 @@
+<h2>Lista de restaurantes</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Razon Social</th>
+            <th>Nombre Comercial</th>
+            <th>Tipo de Restaurante </th>
+            <th>Ciudad de Ubicacion</th>
+            <th>Hora de Apertura</th>
+            <th>Hora de Cierre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody >
+        <tr *ngFor="let restaurante of restaurantes">
+            <th>{{restaurante.razonSocial}}</th>
+            <th>{{restaurante.nombreComercial}}</th>
+            <th>{{restaurante.tipoRestaurante}} </th>
+            <th>{{restaurante.ciudadUbicacion}}</th>
+            <th>{{restaurante.horaApertura}}</th>
+            <th>{{restaurante.horaCierre}}</th>
+
+            <td>
+                <button (click)="actualizarRestaurante(restaurante.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarRestaurante(restaurante.id)" class="btn btn-danger" style="margin-left: 10px" >Eliminar</button>
+                <button (click)="verDetallesDelRestaurante(restaurante.id)" class="btn btn-primary" style="margin-left: 10px" >Detalles</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>

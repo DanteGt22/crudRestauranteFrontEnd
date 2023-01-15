@@ -1,0 +1,22 @@
+<h2>Lista de ingredientes</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre del ingrediente</th>
+            <th>calorias del ingrediente</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody >
+        <tr *ngFor="let ingrediente of ingredientes">
+
+            <td>{{ingrediente.nombre}}</td>
+            <td>{{ingrediente.calorias}}</td>
+            <td>
+                <button (click)="eliminarIngrediente(ingrediente.id)" class="btn btn-danger">Eliminar</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

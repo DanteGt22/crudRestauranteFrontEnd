@@ -1,0 +1,60 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Edición del menu</h3>
+    <form (ngSubmit)= "onSubmit()" #menuForm = "ngForm">
+      <div class="form-group">
+        <label>Tipo de menu : </label>
+        <input type = "text"
+        class="form-control"
+        id = "tipoMenu"
+        [(ngModel)] = "menu.tipoMenu"
+        name = "tipoMenu"
+        required
+        minlength="4"
+        maxlength="100"
+        placeholder="Digite tipo de menu"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite el Nombre del menu por favor
+          </div>
+        </div>
+      </div>
+
+      <label>Nombre del menu : </label>
+      <input type = "text"
+      class="form-control"
+      id = "tipoMenu"
+      [(ngModel)] = "menu.nombreMenu"
+      name = "nombreMenu"
+      required
+      minlength="4"
+      maxlength="100"
+      placeholder="Digite nombre del menu"
+      #nombre = "ngModel"
+      >
+      <div >
+        <div >
+          Digite el precio por favor
+        </div>
+      </div>
+
+      <label>Precio del menu : </label>
+      <input type = "text"
+      class="form-control"
+      id = "tipoMenu"
+      [(ngModel)] = "menu.precioMenu"
+      name = "precioMenu"
+      required
+      minlength="4"
+      maxlength="100"
+      placeholder="Digite el precio del menu"
+      #nombre = "ngModel"
+      >
+    
+
+      <button class="btn btn-success">Guardar</button>
+    </form>
+  </div>
+  
+

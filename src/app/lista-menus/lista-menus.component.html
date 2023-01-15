@@ -1,0 +1,24 @@
+<h2>Lista de menus</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Tipo de Menú</th>
+            <th>Nombre del menú</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody >
+        <tr *ngFor="let menu of menus">
+            <td>{{menu.tipoMenu}}</td>
+            <td>{{menu.nombreMenu}}</td>
+            <td>{{menu.precioMenu}}</td>
+            <td>
+                <button (click)="actualizarMenu(menu.id)" class="btn btn-info">Editar</button>
+                <button (click)="eliminarMenu(menu.id)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

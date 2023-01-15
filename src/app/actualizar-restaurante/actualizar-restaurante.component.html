@@ -1,0 +1,127 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Edición de restaurante</h3>
+    <form (ngSubmit)= "onSubmit()" #restauranteForm = "ngForm">
+      <div class="form-group">
+        <label>Razon Social : </label>
+        <input type = "text"
+        class="form-control"
+        id = "razonSocial"
+        [(ngModel)] = "restaurante.razonSocial"
+        name = "razonSocial"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite Razon Social del restaurante"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite el Nombre Comercial por favor
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Nombre Comercial : </label>
+        <input type = "text"
+        class="form-control"
+        id = "nombreComercial"
+        [(ngModel)] = "restaurante.nombreComercial"
+        name = "nombreComercial"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite Razon Social del restaurante"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite el Tipo de restaurante por favor
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label>Tipo de Restaurante : </label>
+        <input type = "text"
+        class="form-control"
+        id = "tipoRestaurante"
+        [(ngModel)] = "restaurante.tipoRestaurante"
+        name = "tipoRestaurante"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite el tipo de restaurante"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite la ciuad de Ubicación del restaurante por favor
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Ciudad de Ubicación: </label>
+        <input type = "text"
+        class="form-control"
+        id = "ciudadUbicacion"
+        [(ngModel)] = "restaurante.ciudadUbicacion"
+        name = "ciudadUbicacion"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite la ciudad de Ubicación"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite la hora de apertura del restaurante por favor
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Hora de Apertura: </label>
+        <input type = "text"
+        class="form-control"
+        id = "horaApertura"
+        [(ngModel)] = "restaurante.horaApertura"
+        name = "horaApertura"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite la hora de Apertura"
+        #nombre = "ngModel"
+        >
+        <div >
+          <div >
+            Digite la hora de Cierre del restaurante por favor
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Hora de Cierre: </label>
+        <input type = "text"
+        class="form-control"
+        id = "horaCierre"
+        [(ngModel)] = "restaurante.horaCierre"
+        name = "horaCierre"
+        required
+        minlength="4"
+        maxlength="10"
+        placeholder="Digite la hora de Cierre"
+        #nombre = "ngModel"
+        >
+        <div >
+
+        </div>
+      </div>
+  
+  
+      <button class="btn btn-success" [disabled]= "restauranteForm.form.valid">Guardar</button>
+    </form>
+  </div>
+  

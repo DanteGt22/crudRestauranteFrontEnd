@@ -1,0 +1,68 @@
+<div class="col-md-6 offset-md-3">
+     <h3 class="text-center">Registro de Restaurantes</h3>
+
+     <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Razon Social</label>
+            <input type="text"
+            class="form-control"
+            id="razonSocial"
+            [(ngModel)]="restaurante.razonSocial"
+            name = "razonSocial">
+            
+        </div>
+
+        <div class="form-group">
+            <label>Nombre Comercial</label>
+            <input type="text"
+            class="form-control"
+            id="nombreComercial"
+            [(ngModel)]="restaurante.nombreComercial"
+            name = "nombreComercial">
+            
+        </div>
+
+        <div class="form-group">
+            <label>Tipo de Restaurante</label>
+            <input type="text"
+            class="form-control"
+            id="tipoRestaurante"
+            [(ngModel)]="restaurante.tipoRestaurante"
+            name = "razonSocial">
+            
+        </div>
+
+        <div class="form-group">
+            <label>Ciudada de Ubicación</label>
+            <input type="text"
+            class="form-control"
+            id="ciudadUbicacion"
+            [(ngModel)]="restaurante.ciudadUbicacion"
+            name = "ciudadUbicacion">
+            
+        </div>
+
+        <div class="form-group">
+            <label>Hora de Apertura</label>
+            <input type="text"
+            class="form-control"
+            id="horaApertura"
+            [(ngModel)]="restaurante.horaApertura"
+            name = "horaApertura">
+            
+        </div>
+
+        <div class="form-group">
+            <label>Hora de Cierre</label>
+            <input type="text"
+            class="form-control"
+            id="horaCierre"
+            [(ngModel)]="restaurante.horaCierre"
+            name = "horaCierre">
+            
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+     </form>
+
+</div>
